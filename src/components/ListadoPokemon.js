@@ -1,10 +1,13 @@
 import React from "react";
 
 const ListadoPokemon = ({loading, listPokemon}) => {
-    
     const ListItems = () => {
         return loading ? (
-            <div>Cargando pokemones...</div>
+            <div className="mt-2 mb-2">
+                <h2 className="text-center text-white">
+                    Cargando pokemones...
+                </h2>
+            </div>
         ) : (
             listPokemon.map(({data}) => (
                 <div className="col-md-4 mt-2 mb-2" key={data.id}>
