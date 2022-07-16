@@ -1,49 +1,34 @@
-import React, { useState } from "react";
-import { useDispatch } from "react-redux";
-import {
-    setLoadingPokemon,
-    setPokemon,
-    setErrorPokemon,
-} from "../actions/Buscador";
-import queryPokemon from "../services/BuscadorService";
+import React, {useState} from "react";
 
-const BuscadorPokemon = () => {
-    const dispatch = useDispatch();
-    const [pokemonName, setPokemonName] = useState("");
+const BuscadorPokemon = ({onSearch}) => {
+    const [search, setSearch] = useState("");
 
-    const onPokemon = async () => {
-        const resp = await queryPokemon(pokemonName);
-        dispatch(setErrorPokemon(false));
-        dispatch(setLoadingPokemon(true));
-        if (resp.data.is_default) {
-            setTimeout(() => {
-                dispatch(setPokemon(resp));
-                dispatch(setLoadingPokemon(false));
-                dispatch(setErrorPokemon(false));
-                setPokemonName("");
-            }, 3000);
-        } else {
-            dispatch(setPokemon(""));
-            dispatch(setErrorPokemon(true));
-            dispatch(setLoadingPokemon(false));
+    const onChange = (e) => {
+        setSearch(e.target.value);
+        if (e.target.value.length === 0) {
+            onSearch(null);
         }
     };
 
+    const onClick = async () => onSearch(search);
+
     return (
-        <div className="form-group">
-            <label className="text-white">Buscar Pokemon</label>
+        <div className="input-group">
             <input
                 type="text"
                 className="form-control"
-                value={pokemonName}
-                onChange={(event) => setPokemonName(event.target.value)}
+                placeholder="Buscar pokemon..."
+                onChange={onChange}
             />
-            <button
-                className="btn btn-primary mt-3"
-                onClick={() => onPokemon()}
-            >
-                Enviar
-            </button>
+            <div className="input-group-append">
+                <button
+                    className="btn btn btn-primary"
+                    onClick={onClick}
+                    type="button"
+                >
+                    <i className="bi bi-search"></i>
+                </button>
+            </div>
         </div>
     );
 };

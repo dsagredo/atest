@@ -1,9 +1,231 @@
 body {
-  background-color: #192a56!important;
+    background-color: #192a56 !important;
 }
 
-.App {
-  display: flex;
-  justify-content: center;
+.w-33 {
+    width: 33%;
 }
 
+.card-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("img/ash_ketchum.jpeg");
+    background-color: transparent !important;
+    border: transparent !important;
+}
+
+.bg-normal {
+    color: #fff;
+    background: rgba(168, 167, 122, 0.7);
+}
+
+.bg-fire {
+    color: #fff;
+    background: rgba(238, 129, 48, 0.7);
+}
+
+.bg-water {
+    color: #fff;
+    background: rgba(99, 144, 240, 0.7);
+}
+
+.bg-electric {
+    color: #fff;
+    background: rgba(247, 208, 44, 0.7);
+}
+
+.bg-grass {
+    color: #fff;
+    background: rgba(122, 199, 76, 0.7);
+}
+
+.bg-ice {
+    color: #fff;
+    background: rgba(150, 217, 214, 0.7);
+}
+
+.bg-fighting {
+    color: #fff;
+    background: rgba(194, 46, 40, 0.7);
+}
+
+.bg-poison {
+    color: #fff;
+    background: rgba(163, 62, 161, 0.7);
+}
+
+.bg-ground {
+    color: #fff;
+    background: rgba(226, 191, 101, 0.7);
+}
+
+.bg-flying {
+    color: #fff;
+    background: rgba(169, 143, 243, 0.7);
+}
+
+.bg-psychic {
+    color: #fff;
+    background: rgba(249, 85, 135, 0.7);
+}
+
+.bg-bug {
+    color: #fff;
+    background: rgba(166, 185, 26, 0.7);
+}
+
+.bg-rock {
+    color: #fff;
+    background: rgba(182, 161, 54, 0.7);
+}
+
+.bg-ghost,
+.bg-shadow {
+    color: #fff;
+    background: rgba(115, 87, 151, 0.7);
+}
+
+.bg-dragon {
+    color: #fff;
+    background: rgba(111, 53, 252, 0.7);
+}
+
+.bg-dark {
+    color: #fff;
+    background: rgba(112, 87, 70, 0.7);
+}
+
+.bg-steel {
+    color: #fff;
+    background: rgba(183, 183, 206, 0.7);
+}
+
+.bg-fairy {
+    color: #fff;
+    background: rgba(214, 133, 173, 0.7);
+}
+
+.bg-unknown {
+    color: #fff;
+    background: rgba(170, 170, 170, 0.7);
+}
+
+.cl-normal {
+    background-color: #a8a77a;
+    color: #fff;
+}
+
+.cl-fire {
+    background-color: #ee8130;
+    color: #fff;
+}
+
+.cl-water {
+    background-color: #6390f0;
+    color: #fff;
+}
+
+.cl-electric {
+    background-color: #f7d02c;
+    color: #fff;
+}
+
+.cl-grass {
+    background-color: #7ac74c;
+    color: #fff;
+}
+
+.cl-ice {
+    background-color: #96d9d6;
+    color: #fff;
+}
+
+.cl-fighting {
+    background-color: #c22e28;
+    color: #fff;
+}
+
+.cl-poison {
+    background-color: #a33ea1;
+    color: #fff;
+}
+
+.cl-ground {
+    background-color: #e2bf65;
+    color: #fff;
+}
+
+.cl-flying {
+    background-color: #a98ff3;
+    color: #fff;
+}
+
+.cl-psychic {
+    background-color: #f95587;
+    color: #fff;
+}
+
+.cl-bug {
+    background-color: #a6b91a;
+    color: #fff;
+}
+
+.cl-rock {
+    background-color: #b6a136;
+    color: #fff;
+}
+
+.cl-ghost,
+.cl-shadow {
+    background-color: #735797;
+    color: #fff;
+}
+
+.cl-dragon {
+    background-color: #6f35fc;
+    color: #fff;
+}
+
+.cl-dark {
+    background-color: #705746;
+    color: #fff;
+}
+
+.cl-steel {
+    background-color: #b7b7ce;
+    color: #fff;
+}
+
+.cl-fairy {
+    background-color: #d685ad;
+    color: #fff;
+}
+
+.cl-unknown {
+    background-color: #aaa;
+    color: #fff;
+}
+
+.title-pokemon {
+    padding: 10px;
+}
+
+.bg-pokemon {
+    position: relative;
+    height: 100%;
+}
+
+.card-body {
+    padding: initial !important;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.page-link {
+    background-color: #192a56!important;
+    color: #fff!important;
+}

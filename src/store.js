@@ -1,15 +1,15 @@
 import { createStore, combineReducers, applyMiddleware } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 import thunk from "redux-thunk";
-import buyPokemonReducers from "./reducers/Pokemon";
 import {
+    listadoReducers,
     buscadorReducers,
     loadingBuscadorReducers,
     errorBuscadorReducers,
-} from "./reducers/Buscador";
+} from "./reducers/index";
 
 const rootReducer = combineReducers({
-    buyPokemon: buyPokemonReducers,
+    listPokemon: listadoReducers,
     buscadorPokemon: buscadorReducers,
     loadingPokemon: loadingBuscadorReducers,
     errorBuscador: errorBuscadorReducers,
