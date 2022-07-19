@@ -18,7 +18,7 @@ Simple pokedex app create using React, Redux and PokeAPI
 - react-redux
 - bootstrap
 - axios
-- PokeAPI -> [PokeAPI](https://pokeapi.co)
+- PokeAPI -> https://pokeapi.co
 
 ## Installation
 ```sh
