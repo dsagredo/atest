@@ -20,6 +20,10 @@ Simple pokedex app create using React, Redux and PokeAPI
 - axios
 - PokeAPI -> https://pokeapi.co
 
+## Features
+- Pokemon List
+- Pokemon Search
+
 ## Installation
 ```sh
 $ git clone https://github.com/trionoputra/pokemon-app.git
