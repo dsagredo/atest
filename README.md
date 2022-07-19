@@ -37,4 +37,4 @@ $ npm start
 </p>
 
 ## Demo:  
-[https://project-movieapp.netlify.app](https://project-pokemon-api.netlify.app)
+[https://project-pokemon-api.netlify.app](https://project-pokemon-api.netlify.app)
